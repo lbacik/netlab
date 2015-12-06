@@ -15,7 +15,7 @@ To run a command on particular node you don't have to login to it, there have be
 
     h1 ping host02
 
-- It means: run command "ping host02" on h1 (host01)
+It means: run command "ping host02" on h1 (host01)
 Now, using second console (i recommend to use screen - https://www.gnu.org/software/screen/manual/screen.html which is already installed in host system), please check the results on host02:
 
     h2 sudo tcpdump -i eth0 icmp
