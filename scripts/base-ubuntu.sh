@@ -8,7 +8,7 @@ PROVISION_FILE=/project/data/ubuntu-provisioning.lock
 if [ ! -f $PROVISION_FILE ]; then
 
 	aptitude update
-	aptitude install -y lxc
+	aptitude install -y lxc, iftop
 
 	### dns
 	echo '* dns...'
