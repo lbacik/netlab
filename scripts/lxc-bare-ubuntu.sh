@@ -14,7 +14,7 @@ if [ -f $BAREARCHIVE ]; then
 else
 
 	echo '* No compressed bare file found - downloading system image...'
-	lxc-create -n $BARENAME -t ubuntu -- --packages "tcpdump"
+	lxc-create -n $BARENAME -t ubuntu -- --packages "tcpdump, arp-scan, arping"
 	### user ubuntu/ubuntu
 
 	mkdir /var/lib/lxc/$BARENAME/rootfs/home/ubuntu/.ssh
